@@ -15,7 +15,7 @@ namespace LabMO4
         }
         static MyVector GetGradient(MyVector x,double r)
         {
-            var gradient = new MyVector(16 * x.x1 + r * (x.x1 + 3 * x.x2 + 6), 2 * x.x1 + 3 * r * (x.x1 + 3 * x.x2 + 6));
+            var gradient = new MyVector(16 * x.x1 + r * (x.x1 + 3 * x.x2 + 6), 2 * x.x2 + 3 * r * (x.x1 + 3 * x.x2 + 6));
             return gradient;
         }
         static double GetNorma(MyVector vector)
